@@ -3,8 +3,10 @@ import Button from './Button';
 
 function Home() {
   var name = "Arianit";
-  var age = 30;
+  let age = 30;
   var arr = [1,2,3,4,5];
+
+  age += 2;
   return (
     <div>
       <h1>Home Page</h1>
