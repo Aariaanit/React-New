@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-// import BlogList from "./BlogList";
+import BlogList from "./BlogList";
 
 const Home = () => {
   //Krijimi i nje liste duke e perdorur metoden Hook 'useState',
@@ -32,7 +32,7 @@ const Home = () => {
     },
 
   ]);
-  const [name, setName] = useState("Arianit");
+  const [name, setName] = useState<string>("Arianit");
 
 
   //useEffect() eshte nje metode (Hook) qe na mundeson te krijojme efekte me elementet e ndryshme qe i kemi krijue me heret
@@ -45,13 +45,7 @@ const Home = () => {
     <div className="home">
       {/* Nxjerrja e vlerave te array duke e perdor metoden 'map()', kjo metode eshte e ngjashme me loop-en foreach */}
 
-      {blogs.map((blog) => (
-        <div className="blog-preview" key={blog.id}>
-          <h2>{blog.title}</h2>
-          <h3>{blog.body}</h3>
-          <p>{blog.instructor}</p>
-        </div>
-      ))}
+      <BlogList blogs={blogs} title={"Blog Lists"}/>
     </div>
   );
 };

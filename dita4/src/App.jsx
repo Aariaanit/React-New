@@ -3,6 +3,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/contact'
 import Navbar from './components/Navbar'
+import Button from './components/Button'
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="content">
-        <About />
+        <Button />
       </div>
     </div>
   
