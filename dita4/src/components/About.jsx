@@ -9,7 +9,7 @@ const About = () => {
     const click = () => {
         //name = 'Ari';
         setName('Arianit'); //Menyra se si e ndryshojme vleren e Hook.
-        setAge(30)
+        setAge(30);
         setName1('Shkolla Digjitale Prizren');
     }
 
