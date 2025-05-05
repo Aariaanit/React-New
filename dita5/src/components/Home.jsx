@@ -44,18 +44,9 @@ const Home = () => {
   return (
     <div className="home">
       {/* Nxjerrja e vlerave te array duke e perdor metoden 'map()', kjo metode eshte e ngjashme me loop-en foreach */}
-    
       
-      {blogs.map((blog) => (
-        <div className="blog-preview" key={blog.id}>
-          <h2>{blog.title}</h2>
-          <h3>{blog.body}</h3>
-          <p>{blog.instructor}</p>
-        
-        </div>
-      ))}
 
-      {/* <BlogList blogs={blogs} title={"Blog Lists"}/> */}
+      <BlogList blogs={blogs} title={"Blog Lists"}/>
     </div>
   );
 };
